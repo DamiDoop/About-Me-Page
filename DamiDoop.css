@@ -165,7 +165,7 @@ a {
   margin-left: 0px;
   width: 32px;
   height: 32px;
-  transition: 0.5s;
+  transition: transform .2s;
 }
 
 .icon-cont {
@@ -184,16 +184,34 @@ a {
 }
 
 .enlarge:hover {
-  width: 42px;
-  height: 42px;
+  transform: scale(1.5);
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
-.name:hover {
+/* .notice-rainbow:hover {
+  background: linear-gradient(135deg, #f09ea767, #f6ca9467, #fafabe67, #c1ebc067, #c7caff67, #cdabeb67, #f6c2f367);
+  background-size: 1400% 1400%;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  color: white;
+  transition: ease-in-out .5s;
+
+  -webkit-animation: RB-Anim 12s ease infinite;
+  -moz-animation: RB-Anim 12s ease infinite;
+  animation: RB-Anim 12s ease infinite;
+}
+.notice-rainbow {
+  transition: ease-in-out .2s;
+} */
+
+.text-rainbow:hover {
   background: linear-gradient(135deg, #f09ea7, #f6ca94, #fafabe, #c1ebc0, #c7caff, #cdabeb, #f6c2f3);
   background-size: 1400% 1400%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  transition: ease-in-out .5s;
 
   -webkit-animation: RB-Anim 12s ease infinite;
   -moz-animation: RB-Anim 12s ease infinite;
